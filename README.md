@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project showcases my end-to-end data analysis workflow using SQL on a Netflix dataset. This project serves as a practical example of how SQL can be used to drive business intelligence and solve real-world problems.
+This project showcases my end-to-end data analysis workflow using PostgreSQL on a Netflix dataset. This project serves as a practical example of how SQL can be used to drive business intelligence and solve real-world problems.
 
 ## Objective 
 
@@ -16,3 +16,7 @@ This project showcases my end-to-end data analysis workflow using SQL on a Netfl
 ## Dataset
 
 [Netflix.Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
+
+## Schema
+
+<img width="331" height="457" alt="image" src="https://github.com/user-attachments/assets/1b8658f3-6c1b-4c7d-be0f-035e90b83d95" />
