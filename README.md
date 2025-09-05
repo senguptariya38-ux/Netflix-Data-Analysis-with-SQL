@@ -12,3 +12,7 @@ This project showcases my end-to-end data analysis workflow using SQL on a Netfl
 * Demonstrate my ability to translate real-world business questions into technical queries.
 * Extract meaningful insights from raw data, and present findings that can inform strategic decisions. 
 * To solve 15 key business problems for a streaming service like Netflix using SQL.
+
+## Dataset
+
+[Netflix.Dataset](https://www.kaggle.com/datasets/shivamb/netflix-shows?resource=download)
