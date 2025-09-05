@@ -40,7 +40,7 @@ CREATE TABLE netflix
 
 ## Business problems and solutions (Data available till 2021)
 
-1. Find the number of contents added after the year 2020.
+1. Count the content titles added from 2020 onwards.
 
 ```sql
 SELECT COUNT(*) AS number_of_contents
@@ -51,4 +51,58 @@ WHERE release_year >= '2020';
 ```
 Ans: 1545 
 
-2. 
+2. Find All Movies/TV Shows by Director 'Christopher Nolan'
+
+```sql
+SELECT title, director
+FROM netflix
+WHERE director = 'Christopher Nolan'
+```
+3. Find each year the numbers of content release in India on netflix.
+
+```sql
+SELECT country, release_year, count(*) AS total_release
+
+FROM
+netflix
+
+WHERE country = 'India'
+GROUP BY country, release_year
+```
+
+4. Idenyify the longest and shortest movies.
+
+```sql
+SELECT 
+    title, duration
+FROM netflix
+
+WHERE type = 'Movie' and duration IS NOT NULL
+ORDER BY SPLIT_PART(duration, ' ', 1)::INT DESC
+
+LIMIT 1;
+
+SELECT 
+    title, duration
+FROM netflix
+
+WHERE type = 'Movie' and duration IS NOT NULL
+ORDER BY SPLIT_PART(duration, ' ', 1)::INT ASC
+
+LIMIT 1;
+```
+Ans: Longest movie- "Black Mirror: Bandersnatch" (312min), shortest movie- "Silent" (3min)
+
+5. Count the Number of Content Items in Each Genre
+
+```sql
+SELECT 
+    UNNEST(STRING_TO_ARRAY(listed_in, ',')) AS genre,
+    COUNT(*) AS total_content
+FROM netflix
+GROUP BY genre;
+```
+
+
+
+   
