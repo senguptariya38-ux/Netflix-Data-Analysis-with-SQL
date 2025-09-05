@@ -19,4 +19,12 @@ This project showcases my end-to-end data analysis workflow using PostgreSQL on 
 
 ## Schema
 
-<img width="331" height="457" alt="image" src="https://github.com/user-attachments/assets/1b8658f3-6c1b-4c7d-be0f-035e90b83d95" />
+<img width="349" height="441" alt="image" src="https://github.com/user-attachments/assets/7a8367d7-9a6c-44e0-8ac6-cf197ecb1ea0" />
+
+## Business problems and solutions
+
+1. Find the number of contents added from the year 2020.
+
+   <img width="416" height="209" alt="image" src="https://github.com/user-attachments/assets/fcaf5afd-8aa6-4a1f-b793-b116d374407e" />
+
+2. 
