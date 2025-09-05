@@ -19,7 +19,7 @@ This project showcases my end-to-end data analysis workflow using PostgreSQL on 
 
 ## Schema
 
-<img width="349" height="441" alt="image" src="https://github.com/user-attachments/assets/7a8367d7-9a6c-44e0-8ac6-cf197ecb1ea0" />
+git add Schema.sql
 
 ## Business problems and solutions
 
