@@ -25,6 +25,10 @@ This project showcases my end-to-end data analysis workflow using PostgreSQL on 
 
 1. Find the number of contents added from the year 2020.
 
-   <img width="416" height="209" alt="image" src="https://github.com/user-attachments/assets/fcaf5afd-8aa6-4a1f-b793-b116d374407e" />
+   SELECT COUNT(*) AS number_of_contents
+
+FROM netflix
+
+WHERE release_year >= '2020';
 
 2. 
