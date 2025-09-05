@@ -19,16 +19,36 @@ This project showcases my end-to-end data analysis workflow using PostgreSQL on 
 
 ## Schema
 
-git add Schema.sql
+```sql
+DROP TABLE IF EXISTS netflix;
+CREATE TABLE netflix
+(
+	show_id	VARCHAR(5),
+	type    VARCHAR(10),
+	title	VARCHAR(250),
+	director VARCHAR(550),
+	casts	VARCHAR(1050),
+	country	VARCHAR(550),
+	date_added	VARCHAR(55),
+	release_year	INT,
+	rating	VARCHAR(15),
+	duration	VARCHAR(15),
+	listed_in	VARCHAR(250),
+	description VARCHAR(550)
+);
+```
 
-## Business problems and solutions
+## Business problems and solutions (Data available till 2021)
 
-1. Find the number of contents added from the year 2020.
+1. Find the number of contents added after the year 2020.
 
-   SELECT COUNT(*) AS number_of_contents
+```sql
+SELECT COUNT(*) AS number_of_contents
 
 FROM netflix
 
 WHERE release_year >= '2020';
+```
+Ans: 1545 
 
 2. 
